@@ -3,6 +3,9 @@ A hodgepodge of quick KDE UI fixes and application prefs.
 Here's a jumbled assortment of fixes and tweaks made to my KDE
 > Disclaimer: It is intended to be modified with future changes; current files may/not work on all DEs.
 
+## startup
+> ./startup.sh
+
 ## terminal ui
 TODO: Put an image here
 Involving a heavy usage of background scripts and cron jobs and lots of learnings; looks cool though.
@@ -14,9 +17,11 @@ Vim is a super-powerful IDE, immensely enjoyable to get tweaked. Sharing my vimr
 - **NerdTree**: toggles with F2, closed initially
 - **cursor**: highlighted with `/c`, absent initially
 
-## bash
+## shell
 TODO: Put an image here
-`bash_alias` and `bashrc` are attached
+`aliases.zsh` and `zsh.sh` are attached
+> mv aliases.zsh $ZSH_CUSTOM/.
+> ./zsh.sh
 
 ## light/dark mode switch
 The light/dark mode switch was intended from early on. Times are intended to sync to sunrise/sunset for these apps:
