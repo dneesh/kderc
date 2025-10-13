@@ -150,6 +150,20 @@ call plug#end()
 " ==============================================================================
 
 set termguicolors
-set background=dark
+" Auto-set background to light from 6 AM - 6 PM
+function! SetBackgroundBasedOnTime()
+    let l:hour = str2nr(strftime("%H"))
+    if l:hour >= 18 || l:hour < 6
+        set background=dark
+    else
+        set background=light
+    endif
+endfunction
+
+augroup BackgroundAutoSet
+    autocmd!
+    autocmd VimEnter * call SetBackgroundBasedOnTime()
+augroup END
+
 colorscheme enfocado
 

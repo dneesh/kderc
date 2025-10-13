@@ -1,2 +1,2 @@
 cp ~/.vimrc vimrc
-cp $ZSH_CUSTOM/aliases.zsh .
+cp $ZSH/custom/aliases.zsh .
