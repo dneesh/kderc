@@ -1,4 +1,5 @@
-## kderc
+# kderc
+
 A hodgepodge of quick KDE UI fixes and application prefs.
 Here's a jumbled assortment of fixes and tweaks made to my desktop environment.
 > NOTE: Intended to be modified with future changes; current files may/not work on all DEs.
@@ -6,15 +7,14 @@ Here's a jumbled assortment of fixes and tweaks made to my desktop environment.
 
 ## Shell UI
 zsh UI/UX
-
 ![Shell UI](ss/zsh_shell.png)
 
 ```sh
 ./zsh.sh
+cp aliases.zsh "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/aliases.zsh"
 ```
 
 ## Vim UI
-
 ![vimrc](ss/vimrc.png)
 
 ```sh
