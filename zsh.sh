@@ -35,4 +35,4 @@ echo "NOTE: In .zshrc, change `plugins=(git)` to `plugins=(git zsh-autosuggestio
 echo "Once done, press enter..."
 read dummy
 
-cp aliases.zsh $ZSH_CUSTOM/.
+cp aliases.zsh "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/aliases.zsh"
