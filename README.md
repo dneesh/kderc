@@ -16,18 +16,21 @@ Here's a jumbled assortment of fixes and tweaks made to my KDE -
 Involved a heavy usage of background scripts and cron jobs and lots of learnings; looks cool though.
 
 ## vimrc
-Vim is a super-powerful IDE, immensely enjoyable to get tweaked. Sharing my vimrc for reference in this repo.
+Vim is a super-powerful IDE, immensely tweakable. Sharing my vimrc for reference in this repo.
 - **Persistent editor**: users can undo with previous changes everytime  they open a file.
 - **Search**: highlights are closed with `,<SPACE>`
 - **NerdTree**: toggles with F2, closed initially
 - **cursor**: highlighted with `/c`, absent initially
+
+```sh
+cp vimrc ~/.vimrc
+```
 
 ## shell
 ![image](./ss/zsh_shell.png)
 `aliases.zsh` and `zsh.sh` are attached
 
 ```sh
-mv aliases.zsh $ZSH_CUSTOM/.
 ./zsh.sh
 ```
 
@@ -39,4 +42,6 @@ The light/dark mode switch was intended from early on. Times are intended to syn
 - Browser
 
 Ref: **Koi** [https://github.com/baduhai/Koi)]
+
+> Ref: AppImage.md
 
