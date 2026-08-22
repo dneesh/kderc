@@ -1,0 +1,26 @@
+Need:
+1. Superfast internet-browser speed
+[x] Install the fastest browser on earth
+[x] Compare it with the default firefox
+
+2. Make handling easy
+[x] Tab minimize/maximize shortcuts
+
+2. Look cool
+[x] Make vim look cool # include all the features we want
+[x] Make bash look cool
+[x] Install ctags
+
+3. Light/Dark theme switch
+[x] - Change base UI: https://github.com/baduhai/Koi
+[x] - Make vim changes
+[x] - Make browser changes
+
+4. Make opening code very easy
+[x] - bash aliases
+[x] - Setup github
+
+5. README
+[x] Write a README about this
+
+

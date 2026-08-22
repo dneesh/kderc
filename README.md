@@ -9,9 +9,11 @@ Here's a jumbled assortment of fixes and tweaks made to my KDE -
 ```
 
 ## terminal ui
-TODO: Put an image here
+| Light Mode | Dark Mode |
+|:----------:|:---------:|
+| ![Light Mode](ss/light_mode.png) | ![Dark Mode](ss/dark_mode.png) |
 
-Involving a heavy usage of background scripts and cron jobs and lots of learnings; looks cool though.
+Involved a heavy usage of background scripts and cron jobs and lots of learnings; looks cool though.
 
 ## vimrc
 Vim is a super-powerful IDE, immensely enjoyable to get tweaked. Sharing my vimrc for reference in this repo.
