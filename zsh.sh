@@ -1,5 +1,5 @@
 # Shell looks
-#
+
 # Ref:
 # https://www.geeksforgeeks.org/linux-unix/how-to-make-linux-terminal-look-awesome/
 # https://medium.com/@mdomer19967/how-to-make-your-boring-macos-terminal-look-so-much-better-dd7f80ffeedc
