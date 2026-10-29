@@ -21,8 +21,10 @@ endif
 
 " put swap and backup files in a separate folder
 " Ref: https://vi.stackexchange.com/questions/16037/vim-swap-file-best-practices
+" ensure that these directories are already created
 set directory^=$HOME/.vim/swap//
 set backupdir^=$HOME/.vim/backup//
+set undodir^=$HOME/.vim/undo//
 
 " Put these in an autocmd group, so that we can delete them easily.
 augroup vimrcEx
@@ -45,6 +47,7 @@ endif
 " basic wraps
 " ==============================================================================
 set number
+nnoremap <leader>n :set number!<CR>
 set wrap
 set wildmenu
 set showmatch
@@ -130,7 +133,8 @@ Plug 'jiangmiao/auto-pairs'
 " -- nerd-tree
 Plug 'preservim/nerdtree'
 let NERDTreeShowHidden=1
-nmap <F2> :NERDTreeToggle<CR><C-w>p
+let g:NERDTreeFileLines = 1
+nnoremap <F2> :NERDTreeToggle<CR>
 " Close the tab if NERDTree is the only window remaining in it.
 autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | call feedkeys(":quit\<CR>:\<BS>") | endif
 let g:NERDTreeFileLines = 1
@@ -150,7 +154,7 @@ call plug#end()
 " ==============================================================================
 
 set termguicolors
-" Auto-set background to light from 6 AM - 6 PM
+" [Option 1] Auto-set background to light from 6 AM - 6 PM
 " function! SetBackgroundBasedOnTime()
 "     let l:hour = str2nr(strftime("%H"))
 "     if l:hour >= 18 || l:hour < 6
@@ -159,12 +163,13 @@ set termguicolors
 "         set background=light
 "     endif
 " endfunction
-set background=dark
+" augroup BackgroundAutoSet
+"     autocmd!
+"     autocmd VimEnter * call SetBackgroundBasedOnTime()
+" augroup END
 
-augroup BackgroundAutoSet
-    autocmd!
-    autocmd VimEnter * call SetBackgroundBasedOnTime()
-augroup END
+" [Option 2] set background
+set background=dark
 
 colorscheme enfocado
 
